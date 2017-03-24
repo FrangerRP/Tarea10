@@ -1,0 +1,7 @@
+Tomar nombre del usuario:
+
+
+SELECT productos.*, user.Nombre FROM productos
+INNER JOIN user ON user.IdUser = productos.IdUser
+
+

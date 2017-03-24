@@ -1,0 +1,188 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.Cabeza{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(89, 200, 157);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Cabeza a{
+  text-decoration: none;
+  background-color: rgb(200, 219, 197);
+  padding: 5px;
+  color: #fff;
+  border: 1px solid rgb(80, 116, 100);
+}
+.Cabeza a:hover{
+  background-color: rgb(161, 182, 158);
+}
+
+/*Index*/
+.contenedor{
+  width: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor .Cuadros{
+  width: 400px;
+  background-color: #d0cccc;
+  margin: 5px;
+}
+
+.contenedor .Cuadros .Image{
+  width: 100%;
+}
+.contenedor .Cuadros .Image img{
+  width: 100%;
+}
+
+.contenedor .Cuadros .InfoPricipal{
+  width: 98%;
+  padding: 0px 1%;
+  background-color: rgb(128, 215, 166);
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+}
+.contenedor .Cuadros .InfoSecundaria{
+  width: 100%;
+  background-color: rgb(62, 147, 106);
+  color: rgb(251, 251, 251);
+  display: flex;
+  border-top: 1px solid #246549;
+  flex-direction: column;
+}
+
+
+.contenedor .Cuadros .InfoTercearia{
+  width: 98%;
+  padding: 1%;
+  background-color: rgb(221, 205, 236);
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.contenedor .Cuadros .InfoFinal{
+  width: 100%;
+  background-color: rgb(78, 94, 88);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.PDP{
+  margin-top: 10px;
+  background-color: #0f3e25;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PDP a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/*Login, Inser & Register*/
+.Logincontenedor{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.FormSpace{
+  width: 500px;
+  height: 600px;
+  background-color: rgb(47, 167, 106);
+}
+.FormSpace h3{
+  width: 100%;
+  background-color: rgb(47, 219, 168);
+  color: #fff;
+  text-align: center;
+}
+.FormSpace form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px
+}
+.FormSpace form input[type='text'], input[type='password'], input[type='email']{
+  width: 90%;
+  height: 30px;
+  margin-top: 5px;
+}
+.FormSpace form input[type='date'], select{
+  width: 50%;
+  margin-top: 5px;
+}
+.FormSpace form input[type='number']{
+  width: 50%;
+  height: 30px;
+  margin-top: 5px;
+}
+.FormSpace form input[type='file']{
+  width: 50%;
+  margin-top: 5px;
+}
+.FormSpace form textarea{
+  max-width: 90%;
+  min-width: 90%;
+  min-height: 200px;
+  max-height:200px;
+  margin-top: 5px;
+}
+.FormSpace form input[type='submit']{
+  width: 20%;
+  border: none;
+  background-color: rgb(28, 129, 87);
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}
+.FormSpace form input[type='submit']:hover{
+  background-color: rgb(22, 102, 69);
+  cursor: pointer;
+}
+
+/*Only in the login*/
+.FormSpace .Regis{
+  width: 100%;
+  height: 40px;
+  background-color: rgb(35, 134, 74);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FormSpace .Regis a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+.FormSpace .Regis a:hover{
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    [class*="FormSpace"] {
+        width: 100%;
+    }
+}
